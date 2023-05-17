@@ -1,10 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  app: {{ template "flask-app.fullname" . }}
-  chart: {{ template "flask-app.chart" . }}
-  release: {{ .Release.Name }}
-  heritage: {{ .Release.Service }}
+  name: {{ template "flask-app.fullname" . }}
+  labels:
+    app: {{ template "flask-app.fullname" . }}
+    chart: {{ template "flask-app.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
 spec:
   ports:
   - port: 80
