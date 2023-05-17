@@ -1,0 +1,8 @@
+replicaCount: 3
+
+image:
+  repository: eon01/stateless-flask:v0
+  tag: latest
+
+service:
+  type: LoadBalancer
