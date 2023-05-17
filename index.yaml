@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  flask-app-helm:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2023-05-17T11:38:57.216433483+02:00"
+    description: A Helm chart for Kubernetes to learn Argo CD
+    digest: c64fd2e9af968ef89bb3a31c0f50d05b23612e5328d1a79c8a4cf1cf985942c9
+    name: flask-app-helm
+    type: application
+    urls:
+    - flask-app-helm/flask-app-helm-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-05-17T11:38:57.21614895+02:00"
